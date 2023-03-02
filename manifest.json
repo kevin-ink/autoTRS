@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Auto TRS",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://uctrs.it.ucla.edu/uclatrs/calendar*"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
